@@ -1,0 +1,27 @@
+CREATE DATE BASE extra-hour;
+
+CREATE TABLE sales (    
+  id_sale INT NOT NULL AUTO_INCREMENT ,  
+  total_value INT NOT NULL,
+  date_sale TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ,    
+  PRIMARY KEY (id_sale) 
+);
+
+CREATE TABLE products (    
+  id_products INT NOT NULL AUTO_INCREMENT ,  
+  amount varchar(200) NOT NULL,
+  value INT NOT NULL,
+  name_products varchar(200) NOT NULL,
+  PRIMARY KEY (id_products) 
+);
+
+CREATE  TABLE users (    
+  id_user INT NOT NULL AUTO_INCREMENT ,  
+  full_name varchar(200) NOT NULL,
+  email varchar(200) NOT NULL,
+  password varchar(200) NOT NULL,
+  PRIMARY KEY (id_user) 
+);
+
+INSERT INTO users(full_name, email, password) VALUES('Rhaul Campos','rhaul@gmail.com' ,'123');
+
